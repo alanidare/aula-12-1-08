@@ -1,0 +1,1 @@
+//pra generalizar tamanho de fonte, objeto, cor, etc.. Tem que add ainda o treco

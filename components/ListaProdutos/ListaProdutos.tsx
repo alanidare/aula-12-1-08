@@ -2,7 +2,9 @@
 
 
 export default function ListaProdutos(){
+
     const [active, setActive] = useState ("presentes");
+    const [produtos, setProdutos] = useState<ProdutoItem []> ([]);
 
     function alterarActivePraPresentes(){
         setActive("presentes");
@@ -19,10 +21,14 @@ export default function ListaProdutos(){
         <View style ={styles.topBar}>
             <TouchableOpacity>
                 style={StyleSheet.buttonTopBar}
-                onPress= /*terminarrrrr */
+                onPress= {alterarActiveParaPresentes}
+                
+                <CircleDashed color = {active === "presentes" ? "blue" : "gray"}/>
+                <Text style = {{ color : active === "presentes" ? "blue" : "gray"}}>
+                    Presentes
             </TouchableOpacity>
 
-
+{/*FALKTA ACABAR */}
 
         </View>
     )
